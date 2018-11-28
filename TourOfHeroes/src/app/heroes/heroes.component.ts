@@ -4,6 +4,7 @@ import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { MessageService } from '../message.service';
+import { Location } from "@angular/common";
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -24,5 +25,6 @@ export class HeroesComponent implements OnInit {
     this.message = this.selectedHero.name+" has been chosen"; 
     this.messageService.add(this.message);
   }
+  
   
 }
